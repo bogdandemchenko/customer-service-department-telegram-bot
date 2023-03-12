@@ -1,6 +1,31 @@
 const user1 = {
     id: '123',
-    isOnLine: true,
+    login: 'dab30',
+    timeSpentInStatus: 5,
+};
+
+const user2 = {
+    id: '1234',
+    login: 'mak10',
+    timeSpentInStatus: 4,
+};
+
+const user3 = {
+    id: '12345',
+    login: 'kvl10',
+    timeSpentInStatus: 2,
+};
+
+const user4 = {
+    id: '1234578',
+    login: 'vmm4',
+    timeSpentInStatus: 3,
+};
+
+const user5 = {
+    id: '12345910',
+    login: 'mnm5',
+    timeSpentInStatus: 1,
 };
 
 const marketingCompany1 = {
@@ -36,8 +61,16 @@ const lead2 = {
 
 const users = {
     [user1.id]: user1,
-    ids: [user1.id],
+    [user2.id]: user2,
+    [user3.id]: user3,
+    [user4.id]: user4,
+    [user5.id]: user5,
+    ids: [user1.id, user2.id, user3.id, user4.id, user5.id],
 };
+
+const incomingLine = {
+    freeOperators: [user1.id, user2.id, user3.id, user4.id, user5.id],
+}
 
 const leads = {
     [lead1.id]: lead1,
@@ -55,6 +88,7 @@ const marketingCompanies = {
 module.exports = {
     users,
     user1,
+    incomingLine,
     leads,
     marketingCompanies,
 };
